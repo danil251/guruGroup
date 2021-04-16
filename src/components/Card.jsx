@@ -13,7 +13,7 @@ function Card({oldPrice, price, title, seen, locality, date}) {
     const dateCard = day + '.' + month + '.' + year + ', ' + dat.getHours() + '.' + dat.getMinutes()
     const formOldPrice = oldPrice.slice(0, oldPrice.length - 3)
     const formPrice = price.slice(0, price.length - 3)
-
+    const formLocality = locality.length > 15? locality.slice(0, 14) + '...': locality
     return (
         <div className={seen ? `${s.seen} ${s.wrapper}` : s.wrapper}>
             <SimpleSwiper/>
@@ -25,7 +25,7 @@ function Card({oldPrice, price, title, seen, locality, date}) {
                 <span className={s.price}>{formPrice} ₽</span>
                 <span className={s.title}>{title}</span>
                 <div className={s.wrap}>
-                    <span className={s.locality}>{locality}</span>
+                    <span className={s.locality} title={locality}>{formLocality}</span>
                     <span className={s.date}>{dateCard}</span>
                 </div>
             </div>
