@@ -1,28 +1,24 @@
 import React from 'react';
-import Swiper from 'react-id-swiper';
 import s from "./Card.module.sass";
-import 'swiper/swiper.scss'
+import SwiperCore, {Pagination} from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
+
+
+SwiperCore.use([Pagination])
 
 const SimpleSwiper = () => {
-    const params = {
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        },
-        spaceBetween: 30
-    }
-
     return (
-        <Swiper {...params}>
-            <div><img src='https://source.unsplash.com/random' alt="#" className={s.img}/></div>
-            <div><img src='https://source.unsplash.com/random' alt="#" className={s.img}/></div>
-            <div><img src='https://source.unsplash.com/random' alt="#" className={s.img}/></div>
-            <div><img src='https://source.unsplash.com/random' alt="#" className={s.img}/></div>
+        <Swiper spaceBetween={50}
+                slidesPerView={1}
+                pagination={{ clickable: true }}>
+            <SwiperSlide><div><img src='https://source.unsplash.com/random' alt="#" className={s.img}/></div></SwiperSlide>
+            <SwiperSlide><div><img src='https://source.unsplash.com/random' alt="#" className={s.img}/></div></SwiperSlide>
+            <SwiperSlide><div><img src='https://source.unsplash.com/random' alt="#" className={s.img}/></div></SwiperSlide>
+            <SwiperSlide><div><img src='https://source.unsplash.com/random' alt="#" className={s.img}/></div></SwiperSlide>
         </Swiper>
     )
 }
