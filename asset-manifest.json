@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/guruGroup/static/css/main.e7f73175.chunk.css",
+    "main.js": "/guruGroup/static/js/main.7d78bce5.chunk.js",
+    "main.js.map": "/guruGroup/static/js/main.7d78bce5.chunk.js.map",
+    "runtime-main.js": "/guruGroup/static/js/runtime-main.1f863268.js",
+    "runtime-main.js.map": "/guruGroup/static/js/runtime-main.1f863268.js.map",
+    "static/css/2.723e2bec.chunk.css": "/guruGroup/static/css/2.723e2bec.chunk.css",
+    "static/js/2.36c5a1e4.chunk.js": "/guruGroup/static/js/2.36c5a1e4.chunk.js",
+    "static/js/2.36c5a1e4.chunk.js.map": "/guruGroup/static/js/2.36c5a1e4.chunk.js.map",
+    "static/js/3.1de1f3bd.chunk.js": "/guruGroup/static/js/3.1de1f3bd.chunk.js",
+    "static/js/3.1de1f3bd.chunk.js.map": "/guruGroup/static/js/3.1de1f3bd.chunk.js.map",
+    "index.html": "/guruGroup/index.html",
+    "static/css/2.723e2bec.chunk.css.map": "/guruGroup/static/css/2.723e2bec.chunk.css.map",
+    "static/css/main.e7f73175.chunk.css.map": "/guruGroup/static/css/main.e7f73175.chunk.css.map",
+    "static/js/2.36c5a1e4.chunk.js.LICENSE.txt": "/guruGroup/static/js/2.36c5a1e4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f863268.js",
+    "static/css/2.723e2bec.chunk.css",
+    "static/js/2.36c5a1e4.chunk.js",
+    "static/css/main.e7f73175.chunk.css",
+    "static/js/main.7d78bce5.chunk.js"
+  ]
+}
